@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div>
-      <LocationDropDown locations={provinces} />
+      <LocationDropDown locations={provinces} defaultLabel="จังหวัด" />
     </div>
   );
 }
