@@ -11,10 +11,14 @@ export default class LocationDropDown extends Component {
         
     }
 
+    state = {
+        label : this.props.defaultLabel
+    }
+
     render() {
 
         let locations = this.props.locations;
-        let defaultLabel = this.props.defaultLabel;
+        //let defaultLabel = this.props.defaultLabel;
         console.log(locations);
 
         return (
@@ -27,7 +31,7 @@ export default class LocationDropDown extends Component {
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false">
-                {defaultLabel}
+                {this.state.label}
                 </a>
 
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
